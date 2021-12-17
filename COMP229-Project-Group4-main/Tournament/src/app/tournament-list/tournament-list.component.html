@@ -1,0 +1,44 @@
+<main class="container-fluid">
+    <div class="col-md-12">
+
+        <div class="m-4">
+            <a class="btn btn-primary btn-sm mb-2" href="/add-tournament" role="button">
+                <i class="fas fa-plus-circle"></i>Add Tournament
+            </a>
+            <h1 class="display-7 text-center">Active Tournaments</h1>
+        <table class="table table-bordered table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" class="text-center">Tournament</th>
+              <th scope="col" class="text-center">Game</th>
+              <th scope="col" class="text-center">Date</th>
+              <th scope="col" class="text-center">Players</th>
+              <th scope="col" class="text-center">Edit</th>
+              <th scope="col" class="text-center">Delete</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let tour of tournaments'>
+                <td class="text-center">{{tour.tour}}</td>
+                <td class="text-center">{{tour.game}}</td>
+                <td class="text-center">{{tour.date}}</td>
+                <td class="text-center">{{tour.num}}</td>
+                <td class="text-center">
+                    <a [routerLink]="['/edit-tournament/', tour._id]" class="btn btn-success btn-sm">
+                        <i class="fas fa-pencil-alt"></i>Edit
+                    </a>
+                </td>
+                <td class="text-center">
+                    <a (click)="deleteTour(tour._id)" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash-alt"></i>Delete
+                    </a>
+                </td>
+
+            </tr>
+          </tbody>
+        </table>
+        </div>
+    </div>
+  </main>
+

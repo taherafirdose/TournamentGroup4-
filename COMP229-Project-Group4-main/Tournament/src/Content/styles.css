@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+  
+  
+/* You can add global styles to this file, and also import other style files */
+
+/*login*/
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    
+  }
+   .container{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+  }
+  
+  
+  .row{
+    width:340px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    background: #fff;
+    border-radius: 10px;
+  margin-right: 20%;
+  }
+  
+  .container h1{
+    text-align: center;
+    padding: -30px 0;
+    
+  }
+  
+  
+  
+  .form-group .text-right {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+    
+    .m-1 {
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    
+    display: inline;
+    background-color: blue;
+  }
+  
+  .form-group .text-right {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+    
+  .mb-2[type="submit"] {
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+     display: inline;
+    background-color: blue;
+  }
+  
+  .mb-2[type="submit"] {
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+     display: inline;
+    background-color: blue;
+  }
+  
+  .m11-2{
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+     display: inline;
+    background-color: blue;
+  }
+  input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    width: 200px;
+    height: 35px;
+  
+    border: 1px solid #1b1d1b;
+    width: 230px;  
+   text-align: center;
+   display: grid;
+   place-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: 50%
+    m
+  }
+  
+  input[type=password] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    width: 200px;
+    height: 35px;
+     border: 1px solid #1b1d1b;
+     width: 230px;  
+    text-align: center;
+    display: grid;
+    place-items: center;
+    vertical-align:middle
+  }
+  
+  col-md-6{
+    width:400px;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: -2px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  
+  

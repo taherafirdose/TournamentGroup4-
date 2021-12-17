@@ -1,0 +1,53 @@
+<html>
+ 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="bg-img">
+        <h1>Add a Tournament </h1>
+
+        <div class="container">
+            <div class="col-md-12" >
+                <form class="form"  [formGroup]="tourForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group mb-2" >
+                        <label for="nameTextField"><span style="color:black">Name </span></label>
+                        <input type="text" class="form-control" id="nameTextField" 
+                        placeholder="Enter Tournament Name" formControlName="tour" required>
+                    </div>
+                    <div class="form-group mb-2" >
+                        <label for="gameTextField"><span style="color:black">Game </span></label>
+                        <input type="text" class="form-control" id="gameTextField" 
+                        placeholder="Enter Game Name" formControlName="game" required>
+                    </div>
+                    <div class="form-group mb-2" >
+                        <label for="numberTextField"><span style="color: black">Number of Players </span></label>
+                        <input type="text" class="form-control" id="numberTextField" 
+                        placeholder="Enter Number of Players" formControlName="num" required>
+                    </div>
+                    <div class="form-group mb-2" >
+                        <label for="scheduleTextField"><span style="color:black"> Date </span></label>
+                        <input type="text" class="form-control" id="scheduleTextField" 
+                        placeholder="Enter Date" formControlName="date" required>
+                    </div>
+                    <!-- <div class="form-group mb-2" >
+                        <label for="scheduleTextField"><span style="color: #eee01d;"> Time </span></label>
+                        <input type="text" class="form-control" id="scheduleTextField" 
+                        placeholder="Enter Time" formControlName="schedule" required>
+                    </div> -->
+
+
+                    <button class="btn-primary btn " type="submit" style="margin:10px">
+                        <i class="fas fa-edit"></i>Submit
+                    </button>
+                    <a href="/tournament-list" class="btn btn-warning ">
+                        <i class="fas fa-undo"></i>Cancel
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

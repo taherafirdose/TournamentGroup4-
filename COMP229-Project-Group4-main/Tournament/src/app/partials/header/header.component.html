@@ -1,0 +1,45 @@
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href="/tournament-list">
+        <img alt="Logo" src="../../../assets/images/logoNew.jpg" width="80px" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['home']"><i class="fas fa-sm fa-laptop-house"></i>Home</a>
+          </li> -->
+          <li class="nav-item" [routerLinkActive]="['active']">
+              <a class="nav-link" [routerLink]="['about']"><i class="fas fa-info"></i> About</a>
+          </li>
+          <!-- <li class="nav-item" [routerLinkActive]="['active']">
+              <a class="nav-link" [routerLink]="['products']"><i class="fab fa-elementor"></i> Products</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+              <a class="nav-link" [routerLink]="['services']"><i class="fas fa-cogs"></i> Services</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['contact']"><i class="fas fa-phone-alt"></i> Contact</a>
+          </li> -->
+          <li *ngIf='isLoggedIn()' class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['tournament-list']"><i class="fas fa-phone-alt"></i> Tournaments</a>
+          </li>
+          <li *ngIf='isLoggedIn()'
+            class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline">
+            <i class="fas fa-lg fa-user"></i> Welcome, {{ user.displayName }}
+        </li>
+        <li *ngIf='isLoggedIn()' class="nav-item">
+          <a (click)='onLogoutClick()' routerLink='/logout' class="nav-link" href="/login">
+            <i class="fas fa-lg fa-sign-out-alt"></i> Logout </a>
+        </li>
+
+        <li *ngIf='!isLoggedIn()' class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['login']"><i class="fas fa-lg fa-sign-in-alt"></i> Login </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+</nav>
